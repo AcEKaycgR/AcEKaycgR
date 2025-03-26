@@ -1,36 +1,67 @@
-## Hi there 👋
+# 👋 Hi, I'm Kintan Jain!  
+🎯 **B.Tech (CSE - AIML)** | Manipal University Jaipur  
+💡 Passionate about AI, ML, and Game Development  
 
-<!--
-**AcEKaycgR/AcEKaycgR** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
+## 🚀 About Me  
+I'm a Computer Science and Engineering (Artificial Intelligence & Machine Learning) student at Manipal University Jaipur with a strong background in AI/ML and game development. I enjoy working on machine learning models, developing games in Unity and Unreal, and building creative solutions using APIs.  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-<h1 align="left">Hey 👋 What's up?</h1>
+---
 
-###
+## 🛠️ Skills  
+- **Programming:** Python, TensorFlow, Pandas, Django  
+- **AI/ML:** CNN, GRU, Transfer Learning, Data Augmentation  
+- **Game Development:** Unity, Unreal Engine  
+- **Frameworks:** TensorFlow, OpenCV, Keras  
+- **Development:** API Integration, Backend (Django), Data Processing  
+- **Tools:** Git, Linux, Docker  
 
-<p align="left">My name is Kintan Jain and I'm a sophomore at Manipal University Jaipur currently pursuing CSE in AiML</p>
+---
 
-###
+## 💼 Projects  
+### **ML-Based**  
+- 🖼️ **CNN-GRU Art Classification** – Multi-label classification of Style, Artist, and Genre using the WikiArt dataset with SE blocks, LayerNorm, and Cosine Annealing.  
+- 🎯 **Similarity Model for Paintings** – Used VGG16, ResNet50, and MTCNN to assess similarity using cosine similarity and SSIM.  
+- 🏆 **VGG16-Based Classification** – Built an image classifier with data augmentation and transfer learning.  
 
-<h2 align="left">About me</h2>
+### **API-Based**  
+- 🛰️ **Satellite Track Overhead** – Tracked satellite positions using live API data.  
+- 📈 **Stock Tracker** – Built a real-time stock price tracking app.  
+- 🌦️ **Weather Reminder** – Provided weather alerts using OpenWeather API.  
+- 📅 **Habit Tracker** – Developed a tool to monitor and visualize habits.  
+- ✈️ **Flight Checker** – Checked flight statuses using real-time data.  
 
-###
+### **Game-Based**  
+- 🐍 **Snake** – Classic snake game with enhanced controls.  
+- 🏓 **Pong** – Multiplayer pong game in Unity.  
+- 🐢 **Turtle Crossing** – Help the turtle cross the road without getting hit.  
+- 🏁 **Turtle Race** – Simulated a turtle race with AI-controlled opponents.  
+- ❓ **Quizzler** – A trivia-based quiz game with dynamic question sets.  
 
-<p align="left">✨ Creating bugs since ...<br>📚 I'm currently learning ...<br>🎯 Goals: ...<br>🎲 Fun fact: ...</p>
+### **3D Environments**  
+- 🏰 **Castle in Unreal Engine** – Built a detailed castle environment in Unreal Engine.  
+- 🌙 **Night-Style City** – Created a dynamic nighttime cityscape in Unreal Engine.  
 
-###
+---
 
-<h2 align="left">I code with</h2>
+## 🎓 Education  
+**B.Tech in Computer Science (Artificial Intelligence & Machine Learning)**  
+*Manipal University Jaipur*  
+
+---
+
+## 🏆 Achievements  
+- 🏅 Certificates in **DSA, OS, and OOPS**  
+- 🌟 Dean’s List  
+- 📊 **9.74 percentile** in JEE  
+
+---
+
+## 📫 Connect with Me  
+- 💼 [LinkedIn](https://www.linkedin.com/in/kintan-jain-03381529a)  
+- 💻 [GitHub](https://github.com/AcEKaycgR)  
+
 
 ###
 
