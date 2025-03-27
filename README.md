@@ -54,7 +54,7 @@ I'm a Computer Science and Engineering (Artificial Intelligence & Machine Learni
 ## 🏆 Achievements  
 - 🏅 Certificates in **DSA, OS, and OOPS**  
 - 🌟 Dean’s List  
-- 📊 **9.74 percentile** in JEE  
+- 📊 **97.4 percentile** in JEE  
 
 ---
 
