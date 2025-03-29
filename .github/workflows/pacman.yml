@@ -1,7 +1,7 @@
 name: Generate pacman animation
 
 on:
-  schedule: # execute every 12 hours
+  schedule: # Execute every 12 hours
     - cron: "0 */12 * * *" # At the start of every 12th hour
 
   workflow_dispatch:
@@ -14,6 +14,9 @@ jobs:
   generate:
     permissions:
       contents: write
+      pages: write
+      id-token: write
+      
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -27,10 +30,19 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           output_path: ./dist/pacman-contribution-graph.svg
 
+      - name: Force update pacman-contribution-graph.svg
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/pacman-contribution-graph.svg
+          git commit -m "Update Pacman animation [skip ci]" || echo "No changes to commit"
+          git push origin main --force
+
       - name: Push pacman-contribution-graph.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
+          keep_history: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
