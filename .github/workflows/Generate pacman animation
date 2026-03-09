@@ -22,30 +22,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate pacman-contribution-graph.svg
+      - name: Generate pacman-contribution-graph.svg (light)
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
           output_path: ./dist/pacman-contribution-graph.svg
 
-      - name: Set dark background on SVG
-        run: |
-          sed -i 's/fill="#ebedf0"/fill="#161b22"/g' ./dist/pacman-contribution-graph.svg
-          sed -i 's/fill="white"/fill="#0d1117"/g' ./dist/pacman-contribution-graph.svg
-          sed -i 's/fill="#ffffff"/fill="#0d1117"/g' ./dist/pacman-contribution-graph.svg
-          sed -i 's/background:#ffffff/background:#0d1117/g' ./dist/pacman-contribution-graph.svg
-          sed -i 's/background: #ffffff/background: #0d1117/g' ./dist/pacman-contribution-graph.svg
-          sed -i 's/background:#ebedf0/background:#0d1117/g' ./dist/pacman-contribution-graph.svg
+      - name: Generate pacman-contribution-graph-dark.svg (dark)
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          output_path: ./dist/pacman-contribution-graph-dark.svg
+          color_scheme: dark
 
-      - name: Force update pacman-contribution-graph.svg
+      - name: Force update SVGs
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/pacman-contribution-graph.svg
+          git add dist/pacman-contribution-graph.svg dist/pacman-contribution-graph-dark.svg
           git commit -m "Update Pacman animation [skip ci]" || echo "No changes to commit"
           git push origin main --force
 
-      - name: Push pacman-contribution-graph.svg to the output branch
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
