@@ -28,6 +28,15 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           output_path: ./dist/pacman-contribution-graph.svg
 
+      - name: Set dark background on SVG
+        run: |
+          sed -i 's/fill="#ebedf0"/fill="#161b22"/g' ./dist/pacman-contribution-graph.svg
+          sed -i 's/fill="white"/fill="#0d1117"/g' ./dist/pacman-contribution-graph.svg
+          sed -i 's/fill="#ffffff"/fill="#0d1117"/g' ./dist/pacman-contribution-graph.svg
+          sed -i 's/background:#ffffff/background:#0d1117/g' ./dist/pacman-contribution-graph.svg
+          sed -i 's/background: #ffffff/background: #0d1117/g' ./dist/pacman-contribution-graph.svg
+          sed -i 's/background:#ebedf0/background:#0d1117/g' ./dist/pacman-contribution-graph.svg
+
       - name: Force update pacman-contribution-graph.svg
         run: |
           git config --global user.name "github-actions[bot]"
